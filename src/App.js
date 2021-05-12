@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import Search from './components/Search'
+import { items, options } from './utils/data';
+//import Accordion from './components/Accordion'
+//import Search from './components/Search'
+import Dropdown from './components/Dropdown';
 
-class App extends React.Component {
+const App = () => {
+  const [selected, setSelected] = useState(options[0]);
 
-  render() {
-    return (
-      <>
-       {/*<Accordion items={items}/>*/}
-        <Search/>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      {/*<Accordion items={items}/>*/}
+      {/* <Search/> */}
+      <Dropdown
+        options={options}
+        selected={selected}
+        setSelected={setSelected}
+      />
+    </>
+  );
+};
 
 export default App;

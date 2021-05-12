@@ -20,8 +20,9 @@ const Search = () => {
   }, [term])
 
   useEffect(() => {
-    fetchData(debouncedTerm)
-
+    if (debouncedTerm) {
+     fetchData(debouncedTerm) 
+    }
   }, [debouncedTerm]);
 
   const fetchData = async (term) => {
