@@ -27,3 +27,26 @@ export const options = [
     value: 'blue',
   },
 ];
+
+export const options2 = [
+  {
+    label: 'Japanese',
+    value: 'ja',
+  },
+  {
+    label: 'Arabic',
+    value: 'ar',
+  },
+  {
+    label: 'German',
+    value: 'de',
+  },
+  {
+    label: 'Dutch',
+    value: 'nl'
+  },
+  {
+    label: 'French',
+    value: 'fr'
+  }
+];
