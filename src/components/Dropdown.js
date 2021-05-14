@@ -8,7 +8,7 @@ const Dropdown = ({ options, selected, setSelected, label }) => {
     document.addEventListener(
       'click',
       (e) => {
-        if (ref.current.contains(e.target)) {
+        if (ref.current && ref.current.contains(e.target)) {
           return;
         }
         setOpen(false);
